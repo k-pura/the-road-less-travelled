@@ -1,4 +1,4 @@
-const Activity = require('../models/activitiesMod');
+const Activity = require('../models/activityMod');
 
 async function create(req,res) {
    let incomingData = req.body
@@ -21,19 +21,9 @@ function newForm(req,res) {
     res.render("submit.ejs")
 }
 
-function show(req, res) {
-    Activity.findById(req.params.id)
-    .populate('cast').exec(function(err, movie) {
-      // Performer.find({}).where('_id').nin(movie.cast)
-      Performer.find({_id: {$nin: movie.cast}})
-      .exec(function(err, performers) {
-        console.log(performers);
-        res.render('movies/show', {
-          title: 'Movie Detail', movie, performers
-        });
-      });
-    });
-  }
+function show(req,res) {
+
+}
 
 function index(req,res) {
     res.render('submit.ejs', {submits: Activity.getAll()})
@@ -41,7 +31,7 @@ function index(req,res) {
 
 module.exports = {
     index: index,
-    show: show,
-    newForm: newForm,
-    create: create,
+    // show: show,
+    // newForm: newForm,
+    // create: create,
 }

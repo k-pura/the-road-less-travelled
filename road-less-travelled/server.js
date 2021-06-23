@@ -6,16 +6,18 @@ var session = require('express-session');
 var passport = require('passport');
 var logger = require('morgan');
 
+require('./config/activitiesDatabase');
+
 var submitRouter = require('./routes/submit');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 
-require('dotenv').config()
+require('dotenv').config();
 
-require('./config/usersDatabase')
-require('./config/passport')
+require('./config/usersDatabase');
+require('./config/passport');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
