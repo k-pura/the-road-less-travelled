@@ -8,7 +8,7 @@ const submitCtrl = require('../controllers/submitCtrl.js');
 
 
 router.get('/:submit', submitCtrl.index);
-// router.get('/', submitCtrl.show )
+router.get('/', submitCtrl.show )
 
 
 
