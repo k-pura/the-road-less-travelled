@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/ACTIVITIESDATABASE', {
+mongoose.connect('mongodb://localhost/ROADLESSTRAVELLEDDATABASE', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true

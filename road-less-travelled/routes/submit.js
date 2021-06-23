@@ -3,12 +3,10 @@ var router = express.Router();
 
 const submitCtrl = require('../controllers/submitCtrl.js');
 
-// router.get('/new', submitCtrl.newForm)
-// router.post('/post', submitCtrl.create)
 
+router.post('/post', submitCtrl.formData)
+router.get('/', submitCtrl.activityForm)
 
-router.get('/:submit', submitCtrl.index);
-router.get('/', submitCtrl.show )
 
 
 

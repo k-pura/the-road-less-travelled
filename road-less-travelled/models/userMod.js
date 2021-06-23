@@ -7,7 +7,6 @@ var usersSchema = new mongoose.Schema({
   avatar: String,
   googleId: String,
   info: String,
-  comments: [String],
   favorites: [mongoose.Schema.Types.ObjectId],
   
 }, {
