@@ -1,13 +1,15 @@
 <%- include("./partials/header") %>
 
-    <h1>Ontario</h1>
-
-    <% activity.forEach(function(a) { %>
+     
+    <% activities.forEach(function(a) { %>
+        <h2><%= a.type %> </h2>
+    
         <tr>
             <td><%= a.name %></td>
             <td><%= a.location %></td>
             <td><%= a.description %></td>
         </tr>
     <% }); %>
+
 
 <%- include("./partials/footer") %>

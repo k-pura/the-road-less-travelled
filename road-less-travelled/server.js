@@ -6,7 +6,12 @@ var session = require('express-session');
 var passport = require('passport');
 var logger = require('morgan');
 
+
+var profileRouter = require('./routes/profile');
 var submitRouter = require('./routes/submit');
+var homeRouter = require('./routes/home');
+
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -32,7 +37,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // app.use(express.static(path.join(__dirname, 'public')));
-app.use('/submit', submitRouter)
+app.use('/submit', submitRouter);
+app.use('/home', homeRouter);
+app.use('/profile', profileRouter);
+
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
