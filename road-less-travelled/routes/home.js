@@ -15,8 +15,6 @@ router.get('/activity/entertainment', homeCtrl.entertainment)
 
 router.get('/activity/stays', homeCtrl.stays)
 
-router.get('/activity/detail', function(req, res, next) {
-    res.render('detail.ejs');
-})
+router.get('/activity/:id/detail', homeCtrl.detail)
 
 module.exports = router;

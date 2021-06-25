@@ -1,0 +1,22 @@
+<%- include("./partials/header") %>
+
+
+
+    <form action="/profile/edit/<%= profile.id %>/post" method="POST">   
+        <div class="card" style="width: 40rem;">
+            <div class="card-body">
+            <h5 class="card-title">Edit Your Profile</h5>
+            <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><label>Name:</label> <input name="name"/></li>
+                <li class="list-group-item"><label>Email:</label> <input name="email"/></li>
+                <li class="list-group-item"><label>Info:</label> <input name="info"/></li>
+                <li class="list-group-item"><label>Favorites:</label> <input name="favorites"/></li>
+                <button>Send</button> 
+            </ul>
+        </div>
+    </form>    
+  
+  
+<%- include("./partials/footer") %>

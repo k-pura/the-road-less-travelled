@@ -4,7 +4,7 @@ async function formData(req,res) {
    let incomingData = req.body
    console.log(incomingData)
    await Activity.create(req.body)
-    res.send('Thank you!')
+    res.redirect('/home')
 } 
 
 function activityForm(req,res) { 

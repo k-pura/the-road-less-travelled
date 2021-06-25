@@ -1,8 +1,54 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
 a {
   color: #00B7FF;
+}
+
+body {
+  background-image: url('/images/path.jpg');
+  background-color: rgba(255,255,255,0.5);
+  background-blend-mode: lighten;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  flex-direction: column;
+
+}
+
+.title {
+  padding-top: 25px;
+  font-size: 50px;
+  font-family: 'Capriola', sans-serif;
+  text-align: center;
+  
+}
+
+.card {
+  margin: 0 auto;
+  float: none; /* Added */
+  margin-bottom: 15px; 
+  font-family: 'Capriola', sans-serif;
+  text-align: center;
+  background-color: rgba(255,255,255,0.3);
+  background-blend-mode: lighten;
+  background-size: 100%;
+}
+
+.list-group-item {
+  background-color: rgba(255,255,255,0.05);
+  background-blend-mode: lighten;
+  background-size: 100%;
+}
+
+#navbar {
+  cursor: cross-hair;
+  font-size: 25px;
+  font-family: 'Capriola', sans-serif;
+  margin-bottom: 25px;
+}
+
+#province {
+  padding-top: 25px;
+  font-size: 35px;
+  font-family: 'Capriola', sans-serif;
+  text-align: center;
 }

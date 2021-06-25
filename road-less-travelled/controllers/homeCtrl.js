@@ -1,6 +1,13 @@
 const Activity = require('../models/activityMod');
 
 
+function detail(req, res) {
+    Activity.findById(req.params.id, async function(err, detail) {
+        console.log(req.params.id)
+        res.render('detail', {detail})
+    })
+}
+
 function outdoors(req, res) {
     Activity.find({type: 'Outdoor Activity'}, function(err, activities) {
     res.render('activity', {activities})
@@ -44,4 +51,5 @@ module.exports = {
    entertainment:entertainment,
    drinks:drinks,
    stays:stays,
+   detail:detail,
 }

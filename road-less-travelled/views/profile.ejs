@@ -1,0 +1,17 @@
+<%- include("./partials/header") %>
+
+<% user.forEach(function(u) { %>
+    <div class="card text-bl" style="width: 40rem;">
+        <img src='u.picture'/>
+        <div class="card-body">
+        <h3 class="card-title"> <%= u.name  %> </h3>
+        <p class="card-text"> <%= u.email  %> </p>
+        <p class="card-text"> <%= u.info  %> </p>
+        <p class="card-text"> <%= u.favorites  %> </p>
+    </div>
+    <div class="card-body">
+        <a href="/profile/edit" class="card-link">Edit Profile</a>
+    </div>     
+    <% }); %>
+
+<%- include("./partials/footer") %>

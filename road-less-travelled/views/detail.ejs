@@ -1,6 +1,21 @@
 
 <%- include("./partials/header") %>
 
-    <h1>This is my activity detail page</h1>    
+    <% detail.forEach(function(d) { %>
+    <div class="card text-bl" style="width: 40rem;">
+        <div class="card-body">
+        <h3 class="card-title"> <%= d.name %> </h3>
+        <p class="card-text"> <%= d.description %> </p>
+        </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item text-bl"><%= d.location %></li>
+        <li class="list-group-item text-bl"><%= d.website %></li>
+        <li class="list-group-item text-bl"><%= d.difficulty %></li>
+        <li class="list-group-item text-bl"><%= d.cost %></li>
+        <li class="list-group-item text-bl"><%= d.parking %></li>
+        <li class="list-group-item text-bl"><%= d.tips %></li>    
+        </ul>
+    </div>     
+    <% }); %>
 
 <%- include("./partials/footer") %>

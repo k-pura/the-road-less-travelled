@@ -1,21 +1,26 @@
 <%- include("./partials/header") %>
 
-    <h1>Add An Adventure!</h1>    
 
-    <form action="/submit/post" method="POST">
-        <label>Choose your type of adventure:</label> <input name="type"/>
-        <label>Name:</label> <input name="name"/>
-        <label>Location:</label> <input name="location"/>
-        <label>Description:</label> <input name="description"/>
-        <label>Difficulty:</label> <input name="difficulty"/>
-        <label>Cost:</label> <input name="cost"/>
-        <label>Parking:</label> <input name="parking"/>
-        <label>Got any tips?</label> <input name="tips"/>
-        <label>Website:</label> <input name="website"/>
-        <label>Rating:</label> <input name="rating"/>
-        <button>Send</button> 
-    </form>
-
-
-
+    <form action="/submit/post" method="POST">   
+        <div class="card" style="width: 40rem;">
+            <div class="card-body">
+            <h5 class="card-title">Add An Adventure!</h5>
+            <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><label>Choose your type of adventure:</label> <input name="type"/></li>
+                <li class="list-group-item"><label>Name:</label> <input name="name"/></li>
+                <li class="list-group-item"><label>Location:</label> <input name="location"/></li>
+                <li class="list-group-item"><label>Description:</label> <input name="description"/></li>
+                <li class="list-group-item"><label>Difficulty:</label> <input name="difficulty"/></li>
+                <li class="list-group-item"><label>Cost:</label> <input name="cost"/></li>
+                <li class="list-group-item"><label>Parking:</label> <input name="parking"/></li>
+                <li class="list-group-item"><label>Got any tips?</label> <input name="tips"/></li>
+                <li class="list-group-item"><label>Website:</label> <input name="website"/></li>
+                <button>Send</button> 
+            </ul>
+        </div>
+    </form>    
+  
+  
 <%- include("./partials/footer") %>

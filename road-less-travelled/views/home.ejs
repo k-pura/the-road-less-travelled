@@ -1,13 +1,21 @@
 <%- include("./partials/header") %>
 
-    <h1>Ontario</h1>
+    <p id="province">Ontario</p>
 
     <% activity.forEach(function(a) { %>
-        <tr>
-            <td><%= a.name %></td>
-            <td><%= a.location %></td>
-            <td><%= a.description %></td>
-        </tr>
-    <% }); %>
+        <div class="card text-bl" style="width: 40rem;">
+            <div class="card-body">
+            <h3 class="card-title"> <%= a.name %> </h3>
+            <p class="card-text"> <%= a.description %> </p>
+            </div>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item text-bl"> <%= a.type %> </li>
+            <li class="list-group-item text-bl"> <%= a.location %> </li>
+            </ul>
+            <div class="card-body">
+                <a href="/home/activity/detail" class="">Tell me more...</a>
+            </div>
+        </div>     
+        <% }); %>
 
 <%- include("./partials/footer") %>
