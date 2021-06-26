@@ -3,6 +3,7 @@ const Activity = require('../models/activityMod');
 
 function detail(req, res) {
     Activity.findById(req.params.id, async function(err, detail) {
+        console.log('this is my detail', detail)
         console.log(req.params.id)
         res.render('detail', {detail})
     })

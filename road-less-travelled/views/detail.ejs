@@ -1,21 +1,19 @@
 
 <%- include("./partials/header") %>
 
-    <% detail.forEach(function(d) { %>
     <div class="card text-bl" style="width: 40rem;">
         <div class="card-body">
-        <h3 class="card-title"> <%= d.name %> </h3>
-        <p class="card-text"> <%= d.description %> </p>
+        <h3 class="card-title"> <%= detail.name %> </h3>
+        <p class="card-text"> <%= detail.description %> </p>
         </div>
         <ul class="list-group list-group-flush">
-        <li class="list-group-item text-bl"><%= d.location %></li>
-        <li class="list-group-item text-bl"><%= d.website %></li>
-        <li class="list-group-item text-bl"><%= d.difficulty %></li>
-        <li class="list-group-item text-bl"><%= d.cost %></li>
-        <li class="list-group-item text-bl"><%= d.parking %></li>
-        <li class="list-group-item text-bl"><%= d.tips %></li>    
+        <li class="list-group-item text-bl"><%= detail.location %></li>
+        <li class="list-group-item text-bl"><%= detail.difficulty %></li>
+        <li class="list-group-item text-bl"><%= detail.cost %></li>
+        <li class="list-group-item text-bl"><%= detail.parking %></li>
+        <li class="list-group-item text-bl"><%= detail.tips %></li>
+        <a href='<%= detail.website %>'>Website</a>
         </ul>
     </div>     
-    <% }); %>
 
 <%- include("./partials/footer") %>
