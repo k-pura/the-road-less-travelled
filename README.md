@@ -6,15 +6,15 @@ Over these last couple years, what travel looks like has changed drastically. Ke
 
 ## Screenshots of The App
 
-<img src="/Images/Home.PNG">
+<img src="/Public/Images/Home.PNG">
 
-<img src="/Images/Category.PNG">
+<img src="/Public/Images/Category.PNG">
 
-<img src="/Images/Profile.PNG">
+<img src="/Public/Images/Profile.PNG">
 
-<img src="/Images/Form.PNG">
+<img src="/Public/Images/Form.PNG">
 
-<img src="/Images/Detail.PNG">
+<img src="/Public//Images/Detail.PNG">
 
 ## Technologies Used
 
