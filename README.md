@@ -6,7 +6,7 @@ Over these last couple years, what travel looks like has changed drastically. Ke
 
 ## Screenshots of The App
 
-<img src="/Public/Images/Home.PNG">
+<img src="road-less-travelled/public/images/Home.PNG">
 
 <img src="/Public/Images/Category.PNG">
 
